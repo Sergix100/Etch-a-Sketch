@@ -21,11 +21,16 @@
 
     <div id="content">
         <div id = "options">
-            <input id="color" type="color">
+            <input type="color" value="#000000" id="colorValue">
             <button id="color">Color Mode</button>
             <button id="rainbow">Rainbow Mode</button>
             <button id="eraser">Eraser</button>
+            <button id="darken">Whiten</button>
+            <button id="toggleBorder">Toggle Borders</button>
             <button id="clear">Clear</button>
+            <input type="range" min="1" max="100" id="sizeValue">
+            <p id="gridSize"></p>
+            <button id="createGrid">Create Grid</button>
         </div>
         <div id = "container">
             <p>MAGIC <span>Etch A Sketch</span> SCREEN</p>

@@ -35,7 +35,7 @@ input[type="color"] {
     border: none;
   }
 
-#options button{
+button{
     display:inline-block;
     padding:1em 2em;
     border:0.1em solid #FFFFFF;
@@ -52,6 +52,22 @@ input[type="color"] {
     transition: all 0.2s;
 }
 
+.highlighted{
+    display:inline-block;
+    padding:1em 2em;
+    border:0.1em solid #FFFFFF;
+    background-color: white;  
+    margin:2em 0 0 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    text-align:center;
+    cursor: pointer;
+}
+
 #options button:hover{
     color:#000000;
     background-color:#FFFFFF;
@@ -62,6 +78,17 @@ input[type="color"] {
     margin:0.4em auto;
     }
     } 
+
+
+input[type="range"]{
+    margin-top: 25px;
+}    
+
+#gridSize{
+    font-family:'Roboto',sans-serif;
+    color:#FFFFFF;
+    font-size: 1em;
+}    
 
 #container{
     background-color: red;
@@ -90,7 +117,7 @@ input[type="color"] {
     display: flex;
     height: 30vw;
     width: 40vw;
-    border: 3px solid black;
+    border: 3px solid rgba(0, 0, 0, 0);
     background-color: #dee0e0;
 }
 
@@ -103,4 +130,8 @@ input[type="color"] {
 .row{
     flex: 1;
     border: 1px solid black;
+}
+
+.pixel{
+    flex: 1;
 }
